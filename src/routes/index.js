@@ -1,4 +1,5 @@
-const { home, login, oauth } = require('../handlers');
+const { home, login, oauth, add } = require('../handlers');
+const joi = require('joi');
 
 module.exports = [
   {
@@ -24,5 +25,17 @@ module.exports = [
       auth: { mode: 'try' },
     },
     handler: oauth,
+  },
+  {
+    method: 'POST',
+    path: '/add',
+    config: {
+      validate: {
+        payload: {
+          'review-name': joi.string().min(2).max(15).required(),
+        },
+      },
+    },
+    handler: add,
   },
 ];

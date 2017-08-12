@@ -10,7 +10,7 @@ CREATE TABLE review_items (
   id SERIAL PRIMARY KEY,
   name VARCHAR(15) NOT NULL,
   owner INTEGER REFERENCES users(id),
-  current_score REAL NOT NULL
+  current_score REAL
 );
 
 CREATE TABLE reviews (
