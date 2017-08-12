@@ -5,7 +5,8 @@
   "main": "src/start.js",
   "scripts": {
     "test": "tape test/*.spec.js",
-    "start": "node src/start"
+    "start": "node src/start",
+    "dev": "nodemon src/start"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,15 @@
   },
   "homepage": "https://github.com/finnhodgkin/mini-reviews#readme",
   "dependencies": {
-    "hapi": "^16.5.2"
+    "env2": "^2.2.0",
+    "hapi": "^16.5.2",
+    "inert": "^4.2.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
   }
 }
