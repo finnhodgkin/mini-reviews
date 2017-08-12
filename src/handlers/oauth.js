@@ -1,5 +1,6 @@
 const qs = require('querystring');
 const request = require('request-promise');
+const addUser = require('../database/users');
 
 module.exports = async (req, reply) => {
   const accessTokenParams = {
@@ -29,6 +30,11 @@ module.exports = async (req, reply) => {
   };
 
   const { id } = await request.get(options);
+  const newId = await addUser(id);
 
-  console.log(id);
+  if (typeof newId === 'number') {
+    console.log('Logged in again');
+  } else {
+    console.log('Error logging in');
+  }
 };
