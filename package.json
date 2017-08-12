@@ -1,0 +1,31 @@
+{
+  "name": "mini-reviews",
+  "version": "1.0.0",
+  "description": "A small app for displaying and creating mini anonymous review badges.",
+  "main": "src/start.js",
+  "scripts": {
+    "test": "tape test/*.spec.js",
+    "start": "node src/start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnhodgkin/mini-reviews.git"
+  },
+  "keywords": [
+    "review",
+    "stars",
+    "badge",
+    "fun",
+    "oauth",
+    "github"
+  ],
+  "author": "Finn Hodgkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finnhodgkin/mini-reviews/issues"
+  },
+  "homepage": "https://github.com/finnhodgkin/mini-reviews#readme",
+  "dependencies": {
+    "hapi": "^16.5.2"
+  }
+}
