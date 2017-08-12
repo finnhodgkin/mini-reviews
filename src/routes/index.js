@@ -1,4 +1,4 @@
-const { home, login, oauth, add } = require('../handlers');
+const { home, login, oauth, add, badges } = require('../handlers');
 const joi = require('joi');
 
 module.exports = [
@@ -37,5 +37,13 @@ module.exports = [
       },
     },
     handler: add,
+  },
+  {
+    method: 'GET',
+    path: '/badge/{name}',
+    config: {
+      auth: { mode: 'try' },
+    },
+    handler: badges,
   },
 ];

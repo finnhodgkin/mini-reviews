@@ -8,12 +8,13 @@ CREATE TABLE users (
 
 CREATE TABLE review_items (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(15) NOT NULL,
+  name VARCHAR(15) NOT NULL UNIQUE,
   owner INTEGER REFERENCES users(id),
   current_score REAL
 );
 
 CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY,
   review_item INTEGER REFERENCES review_items(id),
   score REAL NOT NULL,
   user_id INTEGER REFERENCES users(id)

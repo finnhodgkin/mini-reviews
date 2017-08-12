@@ -1,5 +1,12 @@
-module.exports = (req, reply) => {
-  const review = req.payload;
+const addUser = require('../database/addReview');
 
-  reply('hi');
+module.exports = async (req, reply) => {
+  const review = req.payload['review-name'];
+  const id = req.auth.credentials.id;
+  const confirm = await addUser(id, review);
+
+  console.log(id, review);
+
+  console.log(confirm);
+  reply.redirect('/badge/' + review);
 };
