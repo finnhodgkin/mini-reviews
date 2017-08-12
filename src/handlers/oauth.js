@@ -14,12 +14,6 @@ module.exports = async (req, reply) => {
 
   const { access_token: accessToken } = qs.parse(await request.post(tokenUrl));
 
-  if (accessToken) {
-    reply('Thanks for logging in.');
-  } else {
-    reply.redirect('/');
-  }
-
   const options = {
     headers: {
       'User-Agent': 'mini-reviews',
@@ -37,4 +31,9 @@ module.exports = async (req, reply) => {
   } else {
     console.log('Error logging in');
   }
+
+  if (accessToken) {
+    req.cookieAuth.set({ id });
+  }
+  reply.redirect('/');
 };

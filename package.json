@@ -29,6 +29,8 @@
   "dependencies": {
     "env2": "^2.2.0",
     "hapi": "^16.5.2",
+    "hapi-auth-cookie": "^7.0.0",
+    "hapi-context-credentials": "^2.0.0",
     "inert": "^4.2.1",
     "pg": "^7.1.0",
     "request": "^2.81.0",
