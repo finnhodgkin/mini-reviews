@@ -49,9 +49,6 @@ module.exports = [
   {
     method: 'GET',
     path: '/badge/{name}',
-    config: {
-      auth: { mode: 'try' },
-    },
     handler: badges,
   },
   {
@@ -65,9 +62,6 @@ module.exports = [
   {
     method: 'POST',
     path: '/post-{score}-{name}',
-    config: {
-      auth: { mode: 'try' },
-    },
     handler: submitReview,
   },
 ];

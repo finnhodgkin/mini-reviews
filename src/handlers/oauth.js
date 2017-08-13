@@ -35,5 +35,5 @@ module.exports = async (req, reply) => {
   if (accessToken) {
     req.cookieAuth.set({ id });
   }
-  reply.redirect('/');
+  reply.redirect(req.url.query.state || '/');
 };

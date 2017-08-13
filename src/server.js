@@ -21,6 +21,7 @@ server.register([inert, cookieAuthModule, contextCredentials], err => {
     isSameSite: false,
     redirectTo: '/',
     redirectOnTry: false,
+    appendNext: true,
   });
 
   server.route(routes);
