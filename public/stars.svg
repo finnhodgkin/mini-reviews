@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="253" height="35">
+  <clipPath id="a"><rect width="253" height="35" rx="5" fill="none"/></clipPath>
+  <g clip-path="url(#a)">
+    <rect x="0" y="0" width="253" height="35" fill="#4c1"/>
+    <rect x="0" y="0" width="82" height="35" fill="#555"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="21"><text x="42" y="24">rating</text></g>
+  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" transform="translate(86)" stroke="#fff" fill="<!--1-->"/>
+  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" transform="translate(118)" stroke="#fff" fill="<!--2-->"/>
+  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" transform="translate(150)" stroke="#fff" fill="<!--3-->"/>
+  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" transform="translate(182)" stroke="#fff" fill="<!--4-->"/>
+  <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" transform="translate(214)" stroke="#fff" fill="<!--5-->"/>
+  <path d="M16 2 L16 23 7 30 10 19 2 12 12 12 Z" transform="translate(86)" fill="<!--6-->" />
+  <path d="M16 2 L16 23 7 30 10 19 2 12 12 12 Z" transform="translate(118)" fill="<!--7-->" />
+  <path d="M16 2 L16 23 7 30 10 19 2 12 12 12 Z" transform="translate(150)" fill="<!--8-->" />
+  <path d="M16 2 L16 23 7 30 10 19 2 12 12 12 Z" transform="translate(182)" fill="<!--9-->" />
+  <path d="M16 2 L16 23 7 30 10 19 2 12 12 12 Z" transform="translate(214)" fill="<!--10-->" />
+</svg>

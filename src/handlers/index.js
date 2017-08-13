@@ -4,4 +4,5 @@ module.exports = {
   oauth: require('./oauth'),
   add: require('./add'),
   badges: require('./badges'),
+  badgeSvg: require('./badgeSvg'),
 };

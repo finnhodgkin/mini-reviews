@@ -1,5 +1,7 @@
 const pool = require('./connect');
 
+const setCurrentScore = require('./setCurrentScore');
+
 // MAKE THIS A TRANSACTION
 
 module.exports = async (id, name, score) => {
@@ -28,6 +30,8 @@ module.exports = async (id, name, score) => {
       'INSERT INTO reviews (score, user_id, review_item) VALUES ($1, $2, $3);',
       [score, id, reviewId]
     );
+
+    await setCurrentScore(name);
     console.log('REVIEW ADDED TO DATABASE');
     return id;
   } catch (err) {
