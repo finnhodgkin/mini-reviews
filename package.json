@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A small app for displaying and creating mini anonymous review badges.",
   "main": "src/start.js",
+  "engines": {
+    "node": "8.1.4"
+  },
   "scripts": {
     "test": "tape test/*.spec.js",
     "start": "node src/start",
