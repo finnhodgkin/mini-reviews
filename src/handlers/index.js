@@ -5,4 +5,5 @@ module.exports = {
   add: require('./add'),
   badges: require('./badges'),
   badgeSvg: require('./badgeSvg'),
+  submitReview: require('./submitReview'),
 };

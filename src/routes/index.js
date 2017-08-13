@@ -1,4 +1,12 @@
-const { home, login, oauth, add, badges, badgeSvg } = require('../handlers');
+const {
+  home,
+  login,
+  oauth,
+  add,
+  badges,
+  badgeSvg,
+  submitReview,
+} = require('../handlers');
 const joi = require('joi');
 
 module.exports = [
@@ -53,5 +61,13 @@ module.exports = [
       auth: { mode: 'try' },
     },
     handler: badgeSvg,
+  },
+  {
+    method: 'POST',
+    path: '/post-{score}-{name}',
+    config: {
+      auth: { mode: 'try' },
+    },
+    handler: submitReview,
   },
 ];
