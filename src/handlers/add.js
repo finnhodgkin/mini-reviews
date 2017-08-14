@@ -1,7 +1,7 @@
 const addUser = require('../database/addReview');
 
 module.exports = async (req, reply) => {
-  const review = req.payload['review-name'];
+  const review = encodeURIComponent(req.payload['review-name']);
   const id = req.auth.credentials.id;
   const confirm = await addUser(id, review);
 
