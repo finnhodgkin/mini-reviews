@@ -14,6 +14,10 @@ It uses Github OAuth to help protect against fake reviewers.
 1. To share the review link copy/paste the page's url.
 1. Have fun.
 
+### Image caching
+
+Github is really annoying about image caching so sometimes it takes a while to update the image.
+
 As an example, below is the review link for this repo. Feel free to add a review :sparkles:):
 
 <a href='http://52.50.84.179/badge/mini%20reviews'><img src='http://52.50.84.179/badge-svg/mini%20reviews.svg' alt='rating badge' height='22' /></a>
