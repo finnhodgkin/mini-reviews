@@ -12,7 +12,8 @@ It uses Github OAuth to help protect against fake reviewers.
 1. Add a review of your own by clicking one of the numbered buttons.
 1. To embed the review svg as a link to the review page, grab the link from under the review buttons.
 1. To share the review link copy/paste the page's url.
-1. Have fun.
+
+#### Only the most recent review from each user will be counted
 
 ### Image caching
 
