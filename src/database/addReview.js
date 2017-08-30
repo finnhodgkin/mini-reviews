@@ -3,7 +3,7 @@ const pool = require('./connect');
 module.exports = async (id, name) => {
   try {
     await pool.query(
-      'INSERT INTO review_items (name, owner) VALUES ($1, $2) RETURNING id;',
+      'INSERT INTO review_items (name, owner) VALUES ($1, $2);',
       [name, id]
     );
     console.log('added review to database');
