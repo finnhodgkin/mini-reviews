@@ -40,7 +40,7 @@ module.exports = [
     config: {
       validate: {
         payload: {
-          'review-name': joi.string().min(2).max(15).required(),
+          'review-name': joi.string().min(2).max(50).required(),
         },
       },
     },
@@ -61,7 +61,7 @@ module.exports = [
   },
   {
     method: 'POST',
-    path: '/post-{score}-{name}',
+    path: '/post/{score}/{name}',
     handler: submitReview,
   },
 ];
