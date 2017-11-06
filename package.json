@@ -9,7 +9,8 @@
   "scripts": {
     "test": "tape test/*.spec.js",
     "start": "node src/start",
-    "dev": "nodemon src/start"
+    "dev": "nodemon src/start",
+    "prod": "forever -o out.log -e err.log src/start.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/finnhodgkin/mini-reviews#readme",
   "dependencies": {
     "env2": "^2.2.0",
+    "forever": "^0.15.3",
     "hapi": "^16.5.2",
     "hapi-auth-cookie": "^7.0.0",
     "hapi-context-credentials": "^2.0.0",

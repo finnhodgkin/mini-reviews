@@ -6,10 +6,28 @@
   <title>Add a new badge</title>
 </head>
 <body>
-  <form action="/add" method="POST">
-    <label for="add-review" class="visually-hidden">Badge name</label>
-    <input type="text" name="review-name" placeholder="Badge name" id="add-review" />
-    <button type="submit" class="add-review-button">Submit</button>
-  </form>
+  <style>
+  body { text-align: center; }
+  main { position: relative; padding: 2rem; width: 12.875rem;
+         border-radius: .25rem; background-color: #eee; border: 1px solid black;
+         display: inline-block; margin: 2rem auto; color: #2d2d2d;
+         font-family: sans-serif; vertical-align: top;}
+  span { vertical-align: top; padding-top: .45rem; display: inline-block;
+         padding-left: 1rem; }
+  input { padding: .3rem; width: 9rem; border-radius: .3rem; border: none;
+          border: 1px solid #2d2d2d; }
+  h1 { font-size: 1.15rem; }
+  label { font-size: .9rem; padding-right: .3rem; }
+  button { border: 1px solid #2d2d2d; padding: .5rem; width: 100%;
+  box-sizing: border-box; margin-top: 1rem; border-radius: .3rem; }
+  </style>
+  <main>
+    <h1>Add a new review topic</h1>
+    <form action="/add" method="POST">
+      <label for="add-review" class="visually-hidden">Name</label>
+      <input type="text" name="review-name" placeholder="Black beans" id="add-review" />
+      <button type="submit" class="add-review-button">Create</button>
+    </form>
+  </main>
 </body>
 </html>
