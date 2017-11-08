@@ -22,7 +22,8 @@ module.exports = async name => {
 
     return average;
   } catch (err) {
-    console.log('Error calculating score: ', err);
+    console.log('Error calculating score:');
+    console.log(err);
     return err;
   }
 };

@@ -14,7 +14,8 @@ module.exports = async name => {
 
     return scores.length;
   } catch (err) {
-    console.log('Error getting current score ', err);
+    console.log('Error getting number of reviews:');
+    console.log(err);
     return err;
   }
 };

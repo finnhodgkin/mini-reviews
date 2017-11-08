@@ -10,7 +10,7 @@
     "test": "tape test/*.spec.js",
     "start": "node src/start",
     "dev": "nodemon src/start",
-    "prod": "forever -o out.log -e err.log src/start.js"
+    "prod": "forever start -o out.log -e err.log src/start.js"
   },
   "repository": {
     "type": "git",

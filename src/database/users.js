@@ -1,8 +1,8 @@
-const pool = require('./connect');
+const { query } = require('./connect');
 
 module.exports = async id => {
   try {
-    await pool.query('INSERT INTO users (id) VALUES ($1);', [id]);
+    await query('INSERT INTO users (id) VALUES ($1);', [id]);
     console.log('added user to database');
     return id;
   } catch (err) {

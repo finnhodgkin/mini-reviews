@@ -1,4 +1,5 @@
 const pool = require('./connect');
+const query = pool.query;
 
 const setCurrentScore = require('./setCurrentScore');
 
@@ -21,9 +22,7 @@ module.exports = async (id, name, score) => {
       hasSubmitted.rows.forEach(async ({ id }) => {
         await pool.query('DELETE FROM reviews WHERE id = $1', [id]);
       });
-      console.log('REVIEW REPLACED');
-    } else {
-      console.log('NEW REVIEW');
+      console.log(`Review on ${name} deleted`);
     }
 
     await pool.query(
@@ -32,10 +31,11 @@ module.exports = async (id, name, score) => {
     );
 
     await setCurrentScore(name);
-    console.log('REVIEW ADDED TO DATABASE');
+    console.log(`Review added to ${name}`);
     return id;
   } catch (err) {
-    console.log('ERROR ADDING NEW REVIEW: ', err);
+    console.log('Error adding review:');
+    console.log(err);
     return err;
   }
 };

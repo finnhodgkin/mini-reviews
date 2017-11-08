@@ -8,12 +8,10 @@ module.exports = async name => {
       'SELECT current_score FROM review_items WHERE name = $1',
       [name]
     );
-    if (score) {
-      return score;
-    }
-    return null;
+    return score || null;
   } catch (err) {
-    console.log('Error getting current score ', err);
+    console.log('Error getting current score:');
+    console.log(err);
     return err;
   }
 };
