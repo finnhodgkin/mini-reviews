@@ -38,6 +38,7 @@
     "hapi-context-credentials": "^2.0.0",
     "inert": "^4.2.1",
     "pg": "^7.1.0",
+    "ramda": "^0.25.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.1"
   },
